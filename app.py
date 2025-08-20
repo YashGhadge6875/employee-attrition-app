@@ -73,6 +73,7 @@ if options == "Predict Attrition":
     if st.button("Predict"):
         prediction = rf_model.predict(input_df)[0]
         if prediction == 1:
-            st.error(⚠️ Employee is likely to Attrite")
+            st.error("⚠️ Employee is likely to Attrite")
         else:
             st.success("✅ Employee is NOT likely to Attrite")
+
